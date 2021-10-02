@@ -88,8 +88,9 @@
         }
         .middle1 {
             border-top: 1px solid transparent;  /*解决外边距塌陷*/
+            border-radius: 7px;
             width: 392px;
-            height: 500px;
+            height: 516px;
             margin-top: 34px;
             background-color: rgb(255,255,255);
         }
@@ -169,7 +170,7 @@
         }
         .today {
             width: 350px;
-            height: 138px;
+            height: 20.8px;
             margin-top: 22px;
             margin-left: 22px;
             margin-top: 30px;
@@ -187,30 +188,79 @@
         }
         .require {
             width: 224px;
-            height: 80px;
-            background-color: purple;
-            float: left;
+            height: 90px;
             margin-top: 27px;
-            /* position: relative; */
+            margin-left: 22px;
+            position: relative;
         }
-        .textlt {
+        .lt {
             position: absolute;
-            left: 0;
-            top: 0;
             font-size: 10px;
         }
-        .textrt {
+        .rt {
             position: absolute;
-            right: 12px;
-            top: 0;
+            right: -12px;
             font-size: 10px;
         }
-        .textlb {
+        .lb {
             position: absolute;
-            left: 0;
             bottom: 0;
-            font-size: 20px;
+            left: -5px;
+            font-size: 50px;
             font-weight: 900;
+        }
+        .lb1 {
+            position: absolute;
+            bottom: 10px;
+            left: 64px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .rb {
+            position: absolute;
+            bottom: 0;
+            right: 2px;
+            font-size: 50px;
+            font-weight: 900;
+        }
+        .rb1 {
+            position: absolute;
+            bottom: 10px;
+            right: -25px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .yuji {
+            margin-top: 60px;
+            width: 392px;
+            height: 30px;
+            /* background-color: pink; */
+        }
+        .yuji img {
+            margin-left: 127px;
+            margin-top: 3px;
+        }
+        .yuji div {
+            display: inline-block;
+            font-size: 14px;
+            color: rgb(187,191,202);
+        }
+        .beidanci {
+            margin: 7px auto 0;
+            width: 340px;
+            height: 66px;
+            background-color: rgb(17,77,227);
+            border-radius: 7px;
+        }
+        .bei {
+            line-height: 66px;
+            text-align: center;
+            color: rgb(244,244,244);
+            font-size: 25px;
+        }
+        .beidanci a :hover {
+            background-color: orange;
+            border-radius: 7px;
         }
     </style>
 </head>
@@ -263,19 +313,35 @@
                     </div>
                 </div>
             </div>
-            <!-- CET盒子结束 -->
             
             <!-- 今日计划盒子 -->
             <div class="today">
                 <h4>今日计划</h4>
                 <a href="#">六级备考包，买一送一</a>
-                <div class="require">
-                    <!-- <span class="textlt">需新学</span>
-                    <span class="textrt">需复习</span>
-                    <span class="texrlb">30</span>
-                    <span class="texrrb">6</span> -->
+            </div>
+            
+            <!-- 新学盒子 -->
+            <div class="require">
+                <span class="lt">需新学</span>
+                <span class="rt">需复习</span>
+                <i class="lb">30</i>
+                <span class="lb1">词</span>
+                <i class="rb">6</i>
+                <span class="rb1">词</span>
 
-                </div>
+
+
+            </div>
+            
+            <!-- 预计盒子 -->
+            <div class="yuji w">
+                <img src="images/时钟.png" width="14px" height="14px">
+                <div>预计用时11分钟</div>
+            </div>
+
+            <!-- 背单词盒子 -->
+            <div class="beidanci">
+                <a href="#"><div class="bei">开始背单词吧！</div></a>
             </div>
         </div>
         
