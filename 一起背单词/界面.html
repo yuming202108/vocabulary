@@ -10,6 +10,10 @@
             margin: 0;
             padding: 0;
         }
+        a {
+            text-decoration: none;
+
+        }
         .w {
             /* 使盒子居中对齐 */
             width: 430px;
@@ -54,7 +58,7 @@
             /* background-color:skyblue */
         }
         .search input {
-            width: 155px;
+            width: 144px;
             height: 30px;
             outline: none;          
             border-width: 0;
@@ -62,7 +66,7 @@
             font-size: 14px;
             background-color: rgb(235,237,236);
             color: rgb(187,192,196);
-            padding-left: 135px;
+            padding-left: 146px;
             position: absolute;
         }
         .search span {
@@ -82,11 +86,137 @@
         .header img:hover{
             width: 30px;
         }
+        .middle1 {
+            border-top: 1px solid transparent;  /*解决外边距塌陷*/
+            width: 392px;
+            height: 500px;
+            margin-top: 34px;
+            background-color: rgb(255,255,255);
+        }
+        .CET {
+            height: 126px;
+            width: 350px;
+            margin-top: 22px;
+            margin-left: 22px;
+            border-bottom: 1px solid rgb(250,250,250);
+        }
+        .CETimg {
+            float: left;
+            display: inline-block;
+            width: 64px;
+            height: 85px;
+        }
+        .CETtext {
+            float: left;
+            display: inline-block;
+            margin-left: 20px;
+            width: 265px;
+            height: 98px;
+            /* background-color: purple; */
+        }
+        .Ctfirstline {
+            width: 265px;
+            height: 24px;
+        }
+        .CETtext h4 {
+            float: left;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .adjust a {
+            display: inline-block;
+            border: 1px solid rgb(244,244,244);
+            margin-top: 0px;
+            float: right;
+            font-size: 10px;
+            padding: 5px;
+            color: rgb(52, 54, 59);
+        }
+        .CETtext h6 {
+            font-weight: 500;
+            
+            margin-top: 19px;
+        }
+        .container {
+            margin-top: 15px;
+            height: 4px;
+        }
+        .progressBar {
+            float: left;
+            width: 247px;
+            border: 2px solid rgb(249,252,253);
+            border-radius: 0 2px 2px 0;
+        }
+        .color {
+            float: left;
+            width: 10px;
+            border: 2px solid rgb(62,114,251);
+            border-radius: 2px 0 0 2px;
+        }
+        .alreadylearn {
+            margin-top: 13px;
+        }
+        .alreadylearn .info {
+            float: left;
+            color: rgb(193,197,212);
+            font-size: 10px;
+        }
+        .alreadylearn .number {
+            float: right;
+            color: rgb(193,197,212);
+            font-size: 10px;
+        }
+        .today {
+            width: 350px;
+            height: 138px;
+            margin-top: 22px;
+            margin-left: 22px;
+            margin-top: 30px;
+        }
+        .today h4 {
+            float: left;
+            font-weight: 600;
+        }
+        .today a {
+            color: rgb(77,130,222);
+            float: right;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20.8px;
+        }
+        .require {
+            width: 224px;
+            height: 80px;
+            background-color: purple;
+            float: left;
+            margin-top: 27px;
+            /* position: relative; */
+        }
+        .textlt {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 10px;
+        }
+        .textrt {
+            position: absolute;
+            right: 12px;
+            top: 0;
+            font-size: 10px;
+        }
+        .textlb {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 20px;
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
     <div class="outer w">
-        <!-- header区域的制作 -->
+        <!-- header区域的制作开始 -->
         <div class="header w">
             <div class="logoleft">
                 <a href="#"><img src="images/check-item.png" width="23px"></a>
@@ -100,6 +230,59 @@
                 <a href="#"><img src="images/email.png" width="23px"></a>
             </div>
         </div>
+        <!-- header区域的制作结束 -->
+
+        <!-- 开始背单词吧 -->
+        
+        <div class="middle1 w"> 
+            <!-- CET盒子 -->
+            <div class="CET">
+                <div class="CETimg">
+                    <img src="images/六级词汇.webp" width="64px" height="85px">
+                </div>
+                <div class="CETtext">
+                    <!-- 第一行内容 -->
+                    <div class="Ctfirstline">
+                        <h4>六级词汇</h4>
+                        <div class="adjust"><a href="#">调整计划</a></div>
+                    </div>
+
+                    <!-- 第二行内容 -->
+                    <h6>每日 30 词，剩余 92 天</h6>
+
+                    <!-- 第三行内容 进度条 -->
+                    <div class="container">                        
+                        <div class="color"></div>
+                        <div class="progressBar"></div>
+                    </div>
+                    
+                    <!-- 第四行内容 已学单词 -->
+                    <div class="alreadylearn">
+                        <div class="info">已学单词</div>
+                        <div class="number">157 / 2902</div>
+                    </div>
+                </div>
+            </div>
+            <!-- CET盒子结束 -->
+            
+            <!-- 今日计划盒子 -->
+            <div class="today">
+                <h4>今日计划</h4>
+                <a href="#">六级备考包，买一送一</a>
+                <div class="require">
+                    <!-- <span class="textlt">需新学</span>
+                    <span class="textrt">需复习</span>
+                    <span class="texrlb">30</span>
+                    <span class="texrrb">6</span> -->
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- 开始背单词结束 -->
+
+        <!--  -->
+        
     </div>
 </body>
 </html>
