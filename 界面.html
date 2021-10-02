@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一起背单词</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .w {
+            /* 使盒子居中对齐 */
+            width: 430px;
+            margin: 0 auto;
+        }
+        .outer {
+            margin-top: 20px;
+            width: 430px;
+            background-color: rgb(247, 247, 247);
+            border-top: 1px solid transparent;  /*解决外边距塌陷*/
+        }
+        .header {
+            margin-top: 10px;
+            height: 37px;
+            /* background-color: pink; */
+            margin-bottom: 0px;
+            border-top: 1px solid transparent;  /*解决外边距塌陷*/
+        }
+        .logoleft {
+            margin-left: 23px;
+            float: left;
+            margin-top: 7.5px;
+            width: 23px;
+            height: 23px;     
+            background-color: transparent;      
+        }
+        .logoright {
+            margin-right: 23px;
+            float: right;
+            margin-top: 7.5px;
+            width: 23px;
+            height: 23px;     
+            background-color: transparent;
+        }
+        .search {
+            position: relative;
+            float: left;
+            margin-left: 23px;
+            margin-top: 2px;
+            width: 290px;
+            height: 38px;
+            /* background-color:skyblue */
+        }
+        .search input {
+            width: 155px;
+            height: 30px;
+            outline: none;          
+            border-width: 0;
+            border-radius: 20px;
+            font-size: 14px;
+            background-color: rgb(235,237,236);
+            color: rgb(187,192,196);
+            padding-left: 135px;
+            position: absolute;
+        }
+        .search span {
+            position:absolute;
+            width: 20px;
+            height: 20px;
+            background:url(images/search.png)no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            z-index: 1;
+            margin-left: 115px;
+            margin-top: 6px;
+        }
+        .search input:hover {
+            background-color: rosybrown;
+        }
+        .header img:hover{
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer w">
+        <!-- header区域的制作 -->
+        <div class="header w">
+            <div class="logoleft">
+                <a href="#"><img src="images/check-item.png" width="23px"></a>
+            </div>
+            <!-- 搜索框 -->
+            <div class="search">
+                <a href="#"><input type="text" value="查词"></a>
+                <span ></span>
+            </div>
+            <div class="logoright">
+                <a href="#"><img src="images/email.png" width="23px"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
