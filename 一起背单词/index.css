@@ -15,11 +15,9 @@ a {
     margin: 0 auto;
 }
 .outer {
-    margin-top: 20px;
     width: 100%;
     background-color: rgb(247, 247, 247);
     border-top: 1px solid transparent;  /*解决外边距塌陷*/
-    position: relative;
 }
 .header {
     display: flex;
@@ -88,7 +86,7 @@ a {
 }
 .CET {
     height: 126px;
-    width: 350px;
+    width: 330px;
     margin-top: 22px;
     margin-left: 22px;
     border-bottom: 1px solid rgb(250,250,250);
@@ -103,7 +101,7 @@ a {
     float: left;
     display: inline-block;
     margin-left: 20px;
-    width: 265px;
+    width: 233px;
     height: 98px;
     /* background-color: purple; */
 }
@@ -225,12 +223,12 @@ a {
 }
 .yuji {
     margin-top: 60px;
-    width: 392px;
+    width: 100%;
     height: 30px;
     /* background-color: pink; */
 }
 .yuji img {
-    margin-left: 127px;
+    margin-left: 117px;
     margin-top: 3px;
 }
 .yuji div {
@@ -307,7 +305,7 @@ a {
 .footer {
     background-color: #fff;
     height: 70px;
-    width: 93%;
+    width: 100%;
     position: fixed;
     bottom: 0;
     border-top: 1px solid #f7f7f7;
@@ -369,8 +367,4 @@ a {
 .footer-text {
     margin-top: 5px;
     font-size: 14px;
-}
-.footer a:hover {
-    background-color: aqua;
-    color: black;
 }
