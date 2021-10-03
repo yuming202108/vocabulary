@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
         }
+        ul li {
+            list-style: none;
+        }
         a {
             text-decoration: none;
 
@@ -24,10 +27,13 @@
             width: 430px;
             background-color: rgb(247, 247, 247);
             border-top: 1px solid transparent;  /*解决外边距塌陷*/
+            position: relative;
         }
         .header {
             margin-top: 10px;
+            width: 430px;
             height: 37px;
+            background-color: rgb(247, 247, 247);
             /* background-color: pink; */
             margin-bottom: 0px;
             border-top: 1px solid transparent;  /*解决外边距塌陷*/
@@ -87,6 +93,7 @@
             width: 30px;
         }
         .middle1 {
+            box-shadow: 1px 5px 14px -4px rgba(180, 172, 172, .3);
             border-top: 1px solid transparent;  /*解决外边距塌陷*/
             border-radius: 7px;
             width: 392px;
@@ -262,6 +269,124 @@
             background-color: orange;
             border-radius: 7px;
         }
+        .middle2 {
+            margin-top: 36px;
+            padding-bottom: 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 392px;
+            background-color: #f7f7f7;
+        }
+        .middle2 a {
+            box-shadow: 1px 5px 14px -4px rgba(180, 172, 172, .3);
+            border-radius: 5px;
+            background-color: #fff;            
+            width: 392px;
+            height: 135px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            padding: 30px 20px;
+            display: flex;
+        }
+        .middle2 span {
+            width: 225px;
+        }
+        .middle2 div {
+            flex: 1;
+            padding-left: 52px;
+        }
+        .middle2 h4 {
+            margin-bottom: 3px;
+        }
+        .middle2 h6 {
+            line-height: 16px;
+            color: rgb(214, 206, 206);
+            font-weight: 300;
+            margin-top: 10px;
+        }
+        .middle2 .img1 {
+            background:url(images/img1.png) no-repeat;
+            background-size: 75px;
+        }
+        .middle2 .img2 {
+            background:url(images/img2.png) no-repeat;
+            background-size: 75px;
+        }
+        .middle2 .img3 {
+            background:url(images/img3.png) no-repeat;
+            background-size: 75px;
+        }
+        .footer {
+            background-color: #fff;
+            height: 70px;
+            width: 430px;
+            position: fixed;
+            bottom: 0;
+            border-top: 1px solid #f7f7f7;
+            display: flex;
+            flex-direction: row;
+        }
+        .footer div {
+            margin: 0 0px;
+            flex: 1;
+        }
+        .footer a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #a09999;
+
+        }
+        .footer .footer-icon1 {
+            margin-top: 10px;
+            width: 25px;
+            height: 25px;
+            background-color: pink;
+            background: url(images/书本.png) no-repeat;
+            background-size: 25px;
+        }
+        .footer .footer-icon2 {
+            margin-top: 10px;
+            width: 25px;
+            height: 25px;
+            background-color: pink;
+            background: url(images/电视剧.png) no-repeat;
+            background-size: 25px;
+        }
+        .footer .footer-icon3 {
+            margin-top: 10px;
+            width: 25px;
+            height: 25px;
+            background-color: pink;
+            background: url(images/发现.png) no-repeat;
+            background-size: 25px;
+        }
+        .footer .footer-icon4 {
+            margin-top: 10px;
+            width: 25px;
+            height: 25px;
+            background-color: pink;
+            background: url(images/商城.png) no-repeat;
+            background-size: 25px;
+        }
+        .footer .footer-icon5 {
+            margin-top: 10px;
+            width: 25px;
+            height: 25px;
+            background-color: pink;
+            background: url(images/我.png) no-repeat;
+            background-size: 25px;
+        }
+        
+        .footer-text {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            background-color: aqua;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -282,8 +407,7 @@
         </div>
         <!-- header区域的制作结束 -->
 
-        <!-- 开始背单词吧 -->
-        
+        <!-- 开始背单词吧 -->        
         <div class="middle1 w"> 
             <!-- CET盒子 -->
             <div class="CET">
@@ -343,12 +467,73 @@
             <div class="beidanci">
                 <a href="#"><div class="bei">开始背单词吧！</div></a>
             </div>
-        </div>
-        
+        </div> 
         <!-- 开始背单词结束 -->
 
-        <!--  -->
+        <!-- 中间2 -->
+        <div class="middle2 w">
+            <a href="#" class="zhishi">
+                <span>
+                    <h4>芝士派听力</h4>
+                    <h4>摆脱无效练习</h4>
+                    <h6>每天10分钟，听懂无字幕电影</h6>
+                </span>
+                <div class="img1"></div>
+            </a>
+            <a href="#" class="aiyue">
+                <span>
+                    <h4>爱阅读</h4>
+                    <h4>海量英文书免费读</h4>
+                    <h6>《百万英镑》、《穿靴子的猫》</h6>
+                </span>
+                <div class="img2"></div>
+            </a>
+            <a href="#" class="mianfei">
+                <span>
+                    <h4>免费读外刊</h4>
+                    <h4>每天早晚带你读新闻</h4>
+                    <h6>点击解锁每日英语新闻阅读权益</h6>
+                </span>
+                <div class="img3"></div>
+            </a>
+        </div>
+        <!-- 中间2结束 -->
         
+        <!-- footer -->
+        <div class="footer w">
+            <div>
+                <a href="#">
+                    <span class="footer-icon1"></span>
+                    <span class="footer-text">单词</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="footer-icon2"></span>
+                    <span class="footer-text">课程</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="footer-icon3"></span>
+                    <span class="footer-text">发现</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="footer-icon4"></span>
+                    <span class="footer-text">商城</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span class="footer-icon5"></span>
+                    <span class="footer-text">我</span>
+                </a>
+            </div>
+        </div>
+        <!-- footer结束 -->
+
     </div>
 </body>
 </html>
