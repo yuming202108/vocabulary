@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.head-baccolor {
+    width: 100%;
+    height: 185px;
+    background-color: rgb(40,63,94);
+    box-sizing: border-box;
+    padding: 10px 20px 0;
+    
+}
+.head-backarrow {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+.arrow {
+    height: 35px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    font-size: 28px;
+}
+.head-img {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;   
+}
+.CETimg {
+    height: 100%;
+    width: 70px;
+}
+.CETtext {
+    margin-left: 20px;
+    flex: 1;
+    position: relative;
+}
+.CETtext h5 {
+    color: white; 
+    line-height: 25px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+.CETtext p {
+    line-height: 22px;
+    font-size: 13px;
+    color: rgb(204, 196, 196);
+}
+.CETtext a {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+.nav {
+    height: 32px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    
+}
+.nav span {
+    flex: 1;
+    padding: 5px;
+    line-height: 22px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+.set-border {
+    border-bottom: 2px solid black;
+}
+.display {
+    height: 32px;
+    width: 100%;
+    background-color: rgb(247,247,247);
+    box-sizing: border-box;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: start;
+}
+.num {
+    font-size: 13px;
+    color: silver;
+    line-height: 22px;
+}
+.container {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container a {
+    font-size: 11px;
+    line-height: 20px;
+    margin-left: 15px;
+    color: black;
+    background-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 1px 8px;
+}
+.display .learn {
+    color: rgb(95, 193, 231);
+    background-color: rgb(194, 229, 243);
+}
+.time {
+    height: 32px;
+    width: 100%;
+    background-color: rgb(247,247,247);
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.time span {
+    font-size: 13px;
+    color: silver;
+    line-height: 22px;
+}
+.word {
+    width: 96%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid rgb(211, 206, 206);
+}
+.word .content1-img {
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    padding: 13px;
+
+}
+.word .rect {
+    height: 50px;
+    width: 210px;
+    box-sizing: border-box;
+    padding: 13px 0;
+
+}
+.rect-color {
+    width: 210px;
+    height: 24px;
+    background-color: rgb(230,234,237);
+}
+.word span {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 13px 0;
+
+}
