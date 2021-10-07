@@ -81,20 +81,20 @@ body {
     border-radius: 10px;
 }
 .one {
-    background: url(../images/阻力.png) no-repeat;
+    background: url(../words-images/结果.jpg) no-repeat;
     background-size: 166.35px 110px;
 }
 .two {
-    background: url(../images/无用.png) no-repeat;
+    background: url(../words-images/反应.jpg) no-repeat;
     background-size: 166.35px 110px;
     margin-right: 0;
 }
 .three {
-    background: url(../images/避难.png) no-repeat;
+    background: url(../words-images/决心.jpg) no-repeat;
     background-size: 166.35px 110px;
 }
 .four {
-    background: url(../images/偿还.png) no-repeat;
+    background: url(../words-images/具体的.jpg) no-repeat;
     background-size: 166.35px 110px;
     margin-right: 0;
 }

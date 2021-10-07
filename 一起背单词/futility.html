@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/futility.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            // 获取a标签
+            var color = document.getElementById("color");
+            // 获取img标签
+            var img = document.getElementById("star");
+            // a标签绑定函数
+            color.ontouchstart = function(){
+                if (img.src == "images/无色星星.png"){
+                    img.src = "images/黄色星星.png"
+                    var a = img.src //a是黄色星星
+                    console.log(a)
+                }
+                else if (img.src == a){
+                    img.src = "images/无色星星.png"
+                };
+            }
+
+                // var a = img.src;
+                
+                // var div = document.createElement("div");
+                
+                // var wordtext = document.createTextNode("futility");
+                
+                // div.appendChild(wordtext);
+
+                // var append_word = document.getElementById("append_word");
+
+                // append_word.appendChild(div);
+
+
+
+            
+            };
+
+            
+        
+    </script>
+
+</head>
+<body>
+        <!-- 整体盒子  控制边距 -->
+    <div class="all">
+
+        <!-- 顶部 单词与星星 -->
+    <div class="head">
+        <h2>resolve</h2>
+        <span><a href="#" id="color"><img src="images/无色星星.png" alt="" id="star"></a></span>
+    </div>
+
+        <!-- 音标 -->
+    <div class="pronounce">
+        <span>
+            [fju:'tɪlətɪ]
+        </span>
+        <span><a href="#"><img src="images/音量 (1).png" alt=""></a></span>
+    </div>
+         
+        <!-- 释义 -->
+    <div class="meaning">
+        <span>
+            n. 无用; 无价值; 无益; 无益的事
+        </span>
+    </div>
+    
+        <!-- 其他信息 -->
+    <div class="info"></div>
+
+
+
+
+
+
+
+
+    
+
+
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <span class="footer-text">
+            斩
+        </span>
+        
+        <a href="vocabulary.html" class="continue">
+            继续做题
+        </a>
+    </div>
+</body>
+</html>

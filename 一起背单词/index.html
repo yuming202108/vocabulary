@@ -6,9 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一起背单词</title>
-    <style>
-        
-    </style>
+    <script>
+        window.onload = function(){
+            var TagA = document.getElementById("tome");
+            var tome =document.getElementById("tome");
+            tome.ontouchstart = function(){
+                // alert('单击确定来跳转至我界面')
+                TagA.href = "me.html"
+            };
+
+        };
+    </script>
 </head>
 <body>
     <div class="outer w">
@@ -152,11 +160,13 @@
             </a>
         </div>
         <div>
-            <a href="me.html">
+            <a href="#" id="tome">
                 <span class="footer-icon5"></span>
                 <span class="footer-text">我</span>
             </a>
         </div>
     </div>
+
+    
 </body>
 </html>
